@@ -42,7 +42,7 @@ for i in *.html; do
   # пишу в библиотеку
   if [ -z "$name" ]
   then
-    printf '%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n' "$zincID" "NA" "$smiles" "$mw" "$logP" "$formula" "$rings" "$heavyAtoms" "$heteroAtoms" "$pHRange" "$netCharge" "$hBondDonors" "$hBondAcceptors" "$polarSurfaceArea" "$rotatableBonds" >> drug_library.csv
+    printf '%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n' "$zincID" "$zincID" "$smiles" "$mw" "$logP" "$formula" "$rings" "$heavyAtoms" "$heteroAtoms" "$pHRange" "$netCharge" "$hBondDonors" "$hBondAcceptors" "$polarSurfaceArea" "$rotatableBonds" >> drug_library.csv
   else
     printf '%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n' "$zincID" "$name" "$smiles" "$mw" "$logP" "$formula" "$rings" "$heavyAtoms" "$heteroAtoms" "$pHRange" "$netCharge" "$hBondDonors" "$hBondAcceptors" "$polarSurfaceArea" "$rotatableBonds" >> drug_library.csv
   fi
